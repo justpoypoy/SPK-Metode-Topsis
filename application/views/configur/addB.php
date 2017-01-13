@@ -1,0 +1,30 @@
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <!-- form start -->
+                    <form role="form" method="POST" action="<?= site_url('tambah-bobot'); ?>">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Kriteria Penilaian</label>
+                                <input type="text" name="kripe" class="form-control" placeholder="Input kriteria penilaian" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Bobot</label>
+                                <input type="text" name="bobot" class="form-control" placeholder="Input kriteria" required="required">
+                            </div>
+                        </div><!-- /.box-body -->
+
+                        <div class="box-footer">
+                            <button type="submit" name="done" class="btn btn-primary">SUBMIT</button>
+                            <a href="<?= site_url('data-bobot') ?>" class="btn btn-danger">KEMBALI</a>
+                        </div>
+                    </form>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div>   <!-- /.row -->
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
